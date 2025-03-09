@@ -4,6 +4,7 @@ class Hinhchunhat{
     public $height = 10;
     public $width = 12;
     //Phuongthuckhoitao
+    //Do uu tien cao hon,tu dong duoc chay khi lop nay khoi tao
     public function __construct(){
         $this->width=12;
         $this->height=30;
