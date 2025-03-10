@@ -17,11 +17,12 @@ class A{
 class B extends A{
     public $attr_2;
     public function method_2(){
-        echo $this->attr_2;
+        return $this->attr_2;
     }
 }
 //Khai bao phuong thuc moi
 $b= new B;
-// Trỏ vào 
+// Trỏ vào pt 2
 $b -> attr_2 ="Class b";
+echo $b->method_2();
 echo $b->method_1();
