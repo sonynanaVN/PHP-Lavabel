@@ -20,12 +20,14 @@ class Project1{
 
         }else{
             echo "Vui lòng kiểm tra đăng nhập";
+            return;//Như break,sẽ dừng ngay nếu sai dữ liệu cung cấp
         }
         if($this->email === $this->db_email && $this->phonenumber === $this->db_phonenumber){
             echo "Xác thực thông tin thành công". $this->email;
 
         }else{
             echo "Sai xót trong quá trình đăng nhập";
+            return;
         }
 
     }
