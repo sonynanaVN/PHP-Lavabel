@@ -12,10 +12,13 @@ class User{
     }
     //Hàm kiểm tra đăng nhập
     function checkLogin(){
-        if($this->username === this->db_username && this->password === this->db_password){
+        if($this->username === $this->db_username && $this->password === $this->db_password){
             echo "Xin chào người dùng:" .$this->username;
         }else{
             echo "Người dùng không tồn tại";
         }
     }
 }
+$a = new User;
+$a->setInfo("unitop","unitop");
+$a->checkLogin();
