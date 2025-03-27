@@ -25,7 +25,7 @@ function insert($table, $data)
 
     foreach($data as $k => $v){
         $list_field[] = "'{$k}'";
-        $list_value[] = "'{$v}'";
+        $list_value[] = "'{$this->espace_string($v)}'";
     }
 
     $list_field = implode(',', $list_field);
